@@ -32,19 +32,21 @@
 		</div>
 	</nav>
 
-	<img id="mountainPlaceholder" src="images/Gersauerstock.jpg" usemap="#GersauerstockMap">
+	<img id="GersauerstockImage" src="images/Gersauerstock.jpg" usemap="#GersauerstockMap">
+	<img id="NiederbauenImage" src="images/Niederbauen.jpg" usemap="#NiederbauenMap" style="display: none;">
+	<img id="PilatusImage" src="images/Pilatus.jpg" usemap="#PilatusMap" style="display: none;">
 
 	<map name="GersauerstockMap">
-		<area alt="Pilatus" title="Pilatus" coords="2613,476,45" shape="circle" onclick="loadNewMountain('Pilatus')">
+		<area alt="Pilatus" title="Pilatus" coords="2613,476,45" shape="circle" onclick="showNewMountain('Gersauerstock', 'Pilatus')">
 	</map>
 
 	<map name="NiederbauenMap">
-		<area alt="Pilatus" title="Pilatus" coords="1537,945,45" shape="circle" onclick="loadNewMountain('Pilatus')">
+		<area alt="Pilatus" title="Pilatus" coords="1537,945,45" shape="circle" onclick="showNewMountain('Niederbauen', 'Pilatus')">
 	</map>
 
 	<map name="PilatusMap">
-		<area alt="Gersauerstock" title="Gersauerstock" coords="878,1062,71" shape="circle" onclick="loadNewMountain('Gersauerstock')">
-		<area alt="Niederbauen" title="Niederbauen" coords="1864,994,104" shape="circle" onclick="loadNewMountain('Niederbauen')">
+		<area alt="Gersauerstock" title="Gersauerstock" coords="878,1062,71" shape="circle" onclick="showNewMountain('Pilatus', 'Gersauerstock')">
+		<area alt="Niederbauen" title="Niederbauen" coords="1864,994,104" shape="circle" onclick="showNewMountain('Pilatus', 'Niederbauen')">
 	</map>
 
 	<footer class="bg-light py-5">
